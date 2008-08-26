@@ -1,0 +1,10 @@
+<% page_title "Latest Feeds" %>
+
+<% for feed in @feeds %>
+<h2><%= feed.title %></h2>
+<ul class="items">
+  <% for item in feed.recent_items %>
+    <li><%= item.title %></li>
+  <% end %>
+</ul>
+<% end %>

@@ -1,0 +1,8 @@
+<% page_title "Subscriptions" %>
+<% content_for :toplinks do %>
+  <%= link_to "New Subscription", new_subscription_path %>
+<% end %>
+
+<ul class="subscriptions">
+  <%= render :partial => "subscription", :collection => @subscriptions %>
+</ul>

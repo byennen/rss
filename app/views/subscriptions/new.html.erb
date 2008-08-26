@@ -1,0 +1,14 @@
+<% page_title "New Subscription" %>
+<% form_for @subscription do |f| %>
+  <%= error_messages_for :subscription %>
+  <table>
+    <% fields_for :feed do |feed_form| %>
+      <tr>
+        <td><%= feed_form.label :url, "URL" %></td>
+        <td><%= feed_form.text_field :url %></td>
+      </tr>
+    <% end %>
+  </table>
+  <br/>
+  <%= submit_tag "Add" %>
+<% end %>

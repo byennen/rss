@@ -1,0 +1,357 @@
+/*
+
+Lance Ennen
+lanceennen.com
+
+*/
+*
+{
+padding: 0px;
+margin: 0px;
+}
+
+body
+{
+background: #FFFFFF;
+font-size: 11px;
+font-family: "trebuchet ms", helvetica, sans-serif;
+color: #8C8C73;
+line-height: 18px;
+}
+
+a
+{
+color: #E82F2E;
+}
+
+a:hover
+{
+color:#58BBEB;
+}
+
+sup
+{
+font-size: 0.5em;
+}
+
+
+p
+{
+margin-bottom: 14px;
+text-align: justify;
+}
+
+img.picA
+{
+position: relative;
+top: -2px;
+background: url('/images/terrafirma/a47.gif') no-repeat;
+width: 76px;
+height: 74px;
+padding: 8px;
+}
+
+img.picB
+{
+position: relative;
+top: -2px;
+background: url('/images/terrafirma/a26.gif') no-repeat;
+width: 146px;
+height: 75px;
+padding: 7px;
+}
+
+img.floatleft
+{
+float: left;
+margin: 0px 14px 3px 0px;
+}
+
+
+ul.linklist
+{
+list-style: none;
+}
+
+ul.linklist li
+{
+border-top: solid 1px #EEEEEE;
+padding-top: 5px;
+margin: 5px 0px 0px 0px;
+}
+
+ul.linklist li.first
+{
+border-top: 0px;
+margin-top: 0px;
+padding-top: 0px;
+}
+
+#outer
+{
+position: relative;
+margin: 0 auto;
+padding: 13px 30px 13px 30px;
+background:#FFFFFF;
+}
+
+#menu
+{
+position: relative;
+background: #0c0c0c;
+height: 67px;
+padding: 0px 20px 0px 5px;
+margin: 0px 0px 20px 0px;
+}
+
+#menu ul
+{
+}
+
+#menu ul li
+{
+display: inline;
+line-height: 52px;
+padding-left: 3px;
+}
+
+#menu ul li.first
+{
+border-left: 0px;
+}
+
+#menu ul li a
+{
+padding: 8px 12px 8px 12px;
+font-size: 12px;
+color: #E82F2E;
+font-weight: bold;
+}
+
+#menu ul li a:hover
+{
+color: #58BBEB;
+}
+
+#date
+{
+position: absolute;
+top: 0px;
+line-height: 52px;
+color: #BDBDA2;
+right: 30px;
+font-weight: bold;
+font-size: 12px;
+letter-spacing: -1px;
+}
+
+#secondarycontent
+{
+position: relative;
+width: 180px;
+float: right;
+}
+
+#secondarycontent h3
+{
+position: relative;
+top: 4px;
+font-size: 16px;
+line-height: 25px;
+color: #656551;
+letter-spacing: -1px;
+background: url('/images/terrafirma/a22.gif') bottom repeat-x;
+padding: 0px 0px 10px 10px;
+margin-bottom: 20px;
+}
+
+#secondarycontent .content
+{
+padding: 0px 10px 0px 10px;
+margin-bottom: 20px;
+}
+
+#primarycontent
+{
+position: relative;
+float: left;
+margin:20px;
+}
+
+#primarycontent h3
+{
+position: relative;
+top: 4px;
+font-size: 18px;
+line-height: 25px;
+color: #656551;
+letter-spacing: -1px;
+padding: 0px 0px 10px 15px;
+margin-bottom: 20px;
+}
+
+#primarycontent .content
+{
+padding: 0px 15px 0px 15px;
+margin-bottom: 20px;
+}
+
+#primarycontent .post
+{
+margin-bottom: 30px;
+}
+
+#primarycontent .post .header
+{
+position: relative;
+}
+
+#primarycontent .post .date
+{
+position: absolute;
+right: 15px;
+top: 0px;
+line-height: 35px;
+color: #AFAFA4;
+font-weight: bold;
+}
+
+#primarycontent .post .content
+{
+margin-bottom: 0px;
+}
+
+#primarycontent .post .footer
+{
+position: relative;
+top: -10px;
+height: 64px;
+}
+
+#primarycontent .post .footer ul
+{
+list-style: none;
+position: absolute;
+right: 15px;
+bottom: 15px;
+}
+
+#primarycontent .post .footer ul li
+{
+display: inline;
+line-height: 14px;
+padding-left: 17px;
+margin-left: 25px;
+background-repeat: no-repeat;
+background-position: 0px 2px;
+}
+
+#primarycontent .post .footer ul li.printerfriendly
+{
+background-image: url('/images/terrafirma/a41.gif');
+}
+
+#primarycontent .post .footer ul li.comments
+{
+background-image: url('/images/terrafirma/a36.gif');
+}
+
+#primarycontent .post .footer ul li.readmore
+{
+background-image: url('/images/terrafirma/a38.gif');
+}
+
+#footer
+{
+position: relative;
+clear: both;
+height: 66px;
+text-align: center;
+line-height: 66px;
+color: #A8A88D;
+background: #0c0c0c;
+}
+
+#footer a
+{
+color: #8C8C73;
+}
+
+
+#toplinks {
+  padding-top: 15px;
+}
+
+#flash {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.flash {
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.flash.notice {
+  background: green;
+}
+
+.flash.error {
+  background: red;
+}
+
+ul.subscriptions {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+li.subscription {
+  color: black;
+  font-size: 16px;
+}
+
+ul.items {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+li.items {
+  color: black;
+  font-size: 16px;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+div.errorExplanation ul {
+  margin-left: 15px;
+}
+
+#primarycontent .content {
+  padding: 0;
+  margin: 0;
+}
+
+form table {
+  border-collapse: collapse;
+}
+
+form table tr {
+}
+
+form table td {
+  padding: 10px;
+}
+
+div.item {
+  padding: 15px;
+}
+
+div.item ul {
+  margin-left: 15px;
+}

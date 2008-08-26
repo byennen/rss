@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <title>Animoto Demo: RSS FEED READER</title>
+    <%= stylesheet_link_tag 'site', 'scaffold'  %>
+    <%= javascript_include_tag :all %>
+  </head>
+  <body>
+    <div id="outer">
+    		<div id="menu">
+    			<ul>
+    				<li class="first">
+    				  <%= link_to "Home", "/" %>
+    				</li>
+    				<li>
+    				  <%= link_to "Subscriptions", subscriptions_path %>
+    				</li>
+    				<% if logged_in? %>
+      				<li>
+      				  <%= link_to "Logout", session_path, :method => "delete" %>
+      				</li>
+    				<% else %>
+      				<li>
+      				  <%= link_to "Login", new_session_path %>
+      				</li>
+    				<% end %>
+    			</ul>
+    		  <div id="date">
+    		    <%= current_date %>
+    		  </div>
+    		  <div id="flash">
+    	      <% flash.keys.each do |key| %>
+    	        <div class="flash <%= key %>">
+    	          <%= flash[key] %>
+    	        </div>
+    	      <% end %>
+          </div>
+  			  <div id="toplinks">
+  				  <%= yield :toplinks %>
+  			  </div>
+    		</div>
+	
+    		<div id="primarycontent">
+    			<div class="post">
+    				<div class="header">
+    					<h3><%= yield :page_title %></h3>
+    				</div>
+    				
+    				<div id="layout">
+    				  <%= yield :layout %>
+    				</div>
+    				
+    			</div>
+    		</div>
+	
+    		<div id="footer">
+				&copy; Lance Ennen. All rights reserved. Design by <a href="http://www.lanceennen.com/">Lance Ennen</a>.
+    		</div>
+
+    	</div>
+    </div>
+  </body>
+</html>

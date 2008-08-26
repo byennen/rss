@@ -1,0 +1,3 @@
+page["item_#{@item.id}"].visual_effect :highlight
+page["item_content_#{@item.id}"].replace_html :partial => 'item', :object => @item
+page["item_content_#{@item.id}"].visual_effect :blind_down, :duration => 0.5

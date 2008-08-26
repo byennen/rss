@@ -1,0 +1,11 @@
+<% page_title @subscription.feed.title %>
+
+<ul class="items">
+  <% for item in @subscription.feed.items %>
+    <li id="item_<%= item.id %>">
+      <%= link_to_remote h(item.title), :url => formatted_item_path(item, :js), :method => :get %>
+      <div id="item_content_<%= item.id %>" style="display: none;">
+      </div>
+    </li>
+  <% end %>
+</ul>
